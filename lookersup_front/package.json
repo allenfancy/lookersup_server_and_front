@@ -1,0 +1,21 @@
+{
+  "name": "allen_demo",
+  "version": "0.0.1",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "express-partials": "0.2.0",
+    "cheerio": "0.13.1",
+    "ejs": "*",
+    "emailjs": "0.3.6",
+    "mongoose": "3.8.4",
+    "underscore": "1.6.0",
+    "connect-flash": "0.1.1",
+    "moment": "^2.6.0",
+    "request": "^2.36.0"
+  }
+}
