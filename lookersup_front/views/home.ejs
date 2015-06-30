@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%=title%></title>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/public.css" />
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css" />
+
+<script src="/javascripts/swfobject.js"></script>
+<SCRIPT type=text/javascript>
+			var cacheBuster = "?t=" + Date.parse(new Date());
+			var stageW = 960;//"100%";
+			var stageH = 330;//"100%";
+		    var attributes = {};
+		    attributes.id = 'show_pro_img';
+		    attributes.name = attributes.id;
+			var params = {};
+			params.bgcolor = "#ffffff";
+			var flashvars = {};	
+			flashvars.componentWidth = stageW;
+			flashvars.componentHeight = stageH;
+			flashvars.pathToFiles = "banner/";
+			flashvars.xmlPath = "lrtk.xml";
+			swfobject.embedSWF("/banner/preview.swf"+cacheBuster, attributes.id, stageW, stageH, "9.0.124", "/banner/expressInstall.swf", flashvars, params);	
+			
+			
+			
+</SCRIPT>
+</head>
+<body>
+
+<%- include header.ejs%>
+<div id="scroll_list">
+   
+    	<DIV id="show_pro_img" ></DIV>
+    
+</div>
+<div class="main clear">
+	<div id="travel_notes">
+    	<div id="notes_nav">
+    		<a id="hot" href="#">热门游记</a>
+        	<a id="new" href="#">最新游记</a>
+        	<span>共发布游记<b></b>篇|今日新发布<b></b>篇</span>
+        </div>
+        <div id="notes_list">
+        	<ul>
+        	
+            </ul>
+            <a class="issue" href="javascript:void(0);" onclick="">发布游记</a>
+            <a class="more" href="">更多游记>></a>
+        </div>
+    </div>
+    
+    <div class="recommend">
+    	<div id="landlord">
+            <h4>推荐地主</h4>
+            <ul class="clear">
+            	<li>
+                	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                	<strong><a href="#">name1</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name2</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name3</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name4</a></strong>
+              	</li>
+          	</ul>
+          	<ul class="clear">
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name5</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name6</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name7</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name8</a></strong>
+              	</li>
+            </ul>
+            <a class="issue_msg" href="#">发布地主信息>></a>
+        </div>
+        <div id="friends">
+        	<h4>推荐驴友</h4>
+            <ul class="clear">
+            	<li>
+                	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                	<strong><a href="#">name1</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name2</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name3</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name4</a></strong>
+              	</li>
+          	</ul>
+          	<ul class="clear">
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name5</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name6</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name7</a></strong>
+              	</li>
+              	<li>
+                  	<a class="img"><img src="../images/usericon/1.gif" /></a>
+                  	<strong><a href="#">name8</a></strong>
+              	</li>
+            </ul>
+            <a class="issue_msg" href="#">加入驴友团队>></a>
+        </div>
+        <div class="wonderful_notes">
+        	<h4>精彩游记</h4>
+            <ul>
+            	<li><a href="#">啦啦啦德玛西亚</a></li>
+                <li><a href="#">啦啦啦德玛西亚</a></li>
+                <li><a href="#">啦啦啦德玛西亚</a></li>
+                <li><a href="#">啦啦啦德玛西亚</a></li>
+                <li><a href="#">啦啦啦德玛西亚</a></li>
+                <li><a href="#">啦啦啦德玛西亚</a></li>
+                <li><a href="#">啦啦啦德玛西亚</a></li>
+                <li><a href="#">啦啦啦德玛西亚</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include footer.ejs%>
+<!--[if IE 6]>
+<script type="text/jscript" src="js/DD_belatedPNG_0.0.8a.js"></script>
+<script>
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- slideShowTime - if set to 0, there is no autoslide -->
+
+<banner width = "960" height = "330"
+		backgroundColor = "0xffffff"
+		backgroundTransparency = "100"
+		
+		startWith = "1"
+		barHeight = "28"
+		fadeTransition = "false"
+		verticalTransition = "false"
+		controllerTop = "false"
+		transitionSpeed = "1"
+		titleX = "0"
+		titleY = "0">
+
+	<items>
+		<item>
+			<title></title>
+			<path>../images/01.jpg</path>
+			<url>http://www.lanrentuku.com/</url>
+			<target>_blank</target>
+			<bar_color>0x4A5E33</bar_color>
+			<bar_transparency>50</bar_transparency>
+			<slideShowTime>3</slideShowTime>
+		</item>
+		<item>
+			<title></title>
+			<path>../images/02.jpg</path>
+			<url>http://www.lanrentuku.com/</url>
+			<target>_blank</target>
+			<bar_color>0x2075c4</bar_color>
+			<bar_transparency>50</bar_transparency>
+			<slideShowTime>3</slideShowTime>
+		</item>
+		
+		<item>
+			<title></title>
+			<path>../images/03.jpg</path>
+			<url>http://www.lanrentuku.com/</url>
+			<target>_blank</target>
+			<bar_color>0x666666</bar_color>
+			<bar_transparency>50</bar_transparency>
+			<slideShowTime>3</slideShowTime>
+		</item>
+		
+		
+	</items>
+		
+</banner>

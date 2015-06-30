@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset */
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select { margin:0; padding:0; }
+em { font-style:normal }
+li { list-style:none; vertical-align:top; }
+a { text-decoration:none; font-family:'微软雅黑'; }
+img { border:none; vertical-align:center; }
+table { border-collapse:collapse; }
+textarea { resize:none;overflow:auto; }
+/* end reset */
+
+.clear {zoom:1;}
+.clear:after { content:""; display:block; clear:both; }
+body { background:url(../images/body_bg.png) repeat; }
+
+/* 头部 */
+.top_bar { width:960px; height:86px; margin:0 auto; }
+.top_bar .logo { width:350px; height:86px; float:left; }
+.logo a { display:block; width:236; height:60px; margin-top:12px; margin-left:50px; }
+
+/* 登陆前 */
+.login { float:right; height:86px; text-align:center; margin-right:50px; display:inline; }
+.login li {float:left; height:32px; line-height:32px; margin:27px 10px; }
+.login a { color:#666; font-size:14px; }
+.login a:hover { text-decoration:underline;}
+
+/* 登陆后 */
+.userlogin1 {float:right; width:306px; height:86px; }
+.userlogin1 .img { display:block; height:60px; width:60px; float:left; margin-top:20px; margin-left:24px; display:inline; }
+.userlogin1 span,.userlogin1 strong,.userlogin1 a { font-size:12px; color:#a7a7a7; }
+.userlogin1 strong a { color:#85c989; }
+.userlogin1 a:hover { text-decoration:underline; }
+.userlogin1 ul { height:24px; line-height:24px; margin-top:10px; }
+.userlogin1 ul li { float:left; padding-right:4px; }
+.userlogin1 .text { height:48px; margin-top:20px; float:right; margin-right:30px; }
+
+
+/* 头部导航 */
+.head { width:960px; margin:0 auto;position:relative; background:#e3a1a3; }
+.head .nav { height:46px; width:430px; margin-left:10px; }
+.head li { float:left; height:26px; line-height:26px; text-align:center; margin:10px 12px; display:inline; }
+.head a {color:#fff; font-size:14px; font-weight:bold; text-decoration:none; }
+.head a:hover { color:#FCC; }
+.head .serch  { height:28px; width:190px; position:absolute; top:9px;right:28px; }
+.head .text {outline:none; width:160px; height:28px; line-height:28px; border:1px solid #999; position:absolute;top:0; left:0; color:#aeaeae; }
+.head .btn { width:28px; height:28px;position:absolute; top:1px; right:0; border:none; color:#666; font-size:14px; font-weight:bold; font-family:Arial; }
+
+/* 主体部分 */
+.main { width:960px; margin:0 auto; margin-top:22px; }
+
+/* 主体右侧 */
+.recommend { width:302px; float:right; }
+
+/* 精彩游记 */
+.wonderful_notes { width:302px; background:#fff; margin-bottom:10px;}
+.wonderful_notes h4 { font-size:14px; color:#9291ac; height:38px; line-height:38px; padding-top:8px; padding-left:14px; }
+.wonderful_notes ul { padding-bottom:16px; }
+.wonderful_notes li { font-size:12px; line-height:28px; width:266px; margin-left:18px;  background:url(../images/wonderfulnotes_bg.gif) no-repeat 0 12px; }
+.wonderful_notes a { display:block; height:28px; color:#81829f; margin-left:8px; }
+.wonderful_notes a:hover { color:#6ab610; text-decoration:underline; }
+
+/* 尾部 */
+.footer { width:960px; margin:26px auto; text-align:center; border-top:1px solid #dadada; }
+.footer ul { margin-left:348px; margin-top:12px; }
+.footer li { float:left; padding-right:10px;}
+.footer a,.footer p { font-size:12px; font-weight:bold; color:#929292; }
+.footer span { padding-left:10px; font-weight:bold; font-size:10px; color:#e2dfdf; }
+.footer li,.footer p { height:24px; line-height:24px; }
+.footer p { padding-bottom:20px; }

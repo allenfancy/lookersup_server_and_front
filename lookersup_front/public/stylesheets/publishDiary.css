@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+#form_body { width:880px; background:#fff; padding:40px;  }
+.textRight { margin-bottom:10px; }
+.wrap { margin-bottom:22px; } 
+#publish label{ width:100px; text-align:right; display:inline-block; font-size:14px; }
+#publish .text { width:290px; height:30px; }
+#publish select { width:290px; height:30px; background:#fff; }
+#publish .upload { width:30px; }
+#publish .content { display:inline-block; vertical-align:top; width:600px; height:350px; }
+#publish textarea { height:100%; width:100%; font-size:12px; padding:6px; }
+.sub_btn { text-align:center; }
+.sbtn { width:120px; height:30px; font-size:14px; background:#0C0; border:none; color:#fff; }

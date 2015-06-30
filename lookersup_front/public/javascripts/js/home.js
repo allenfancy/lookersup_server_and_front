@@ -6,7 +6,7 @@ require.config({
     	 "jquery-cookie" : "lib/jquery.cookie",
     	 "data":"lib/data"
     },
- /*   shim : {
+  /* shim : {
     	"jquery":["jquery"],
         "jquery-cookie" : [ "jquery" ]
     }*/
@@ -14,4 +14,4 @@ require.config({
 });
 
 /*require 引进js文件并执行*/
-require(["user_register_define"]);
+require(["home_define"]);

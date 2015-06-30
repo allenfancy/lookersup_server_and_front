@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* index */
+
+/* 图片轮动 */
+#scroll_list { width:960px; height:326px; margin:0 auto; background:#fff; overflow:hidden; margin-top:8px; }
+#list_wrap { width:942px; margin:9px auto;  position:relative; }
+/* #list_wrap li { height:308px; }
+#list_wrap a { display:block; width:942px; height:308px; }
+#list_wrap .prev,#list_wrap .next { width:50px; height:50px; position:absolute; top:138px; }
+#list_wrap .prev { background:url(../images/left.png) no-repeat; left:10px;}
+#list_wrap .next { background:url(../images/right.png) no-repeat; right:10px;}
+ */
+/* 主体左侧 */
+#travel_notes { width:646px; float:left; }
+/* 游记导航 */
+#notes_nav { height:40px; line-height:40px; margin-left:8px; margin-right:22px; }
+#notes_nav #hot,#notes_nav #new { display:block; font-size:14px; font-weight:bold; color:#fff; width:58px; height:18px; line-height:18px; overflow:hidden; padding:8px 20px; background:#e3a1a3; float:left; margin:2px 0px 2px 10px;}
+#notes_nav span { float:right; font-size:14px; color:#333; }
+/* 游记列表 */
+#notes_list {  margin-top:20px; overflow:hidden; background:#fff; zoom:1; }
+#notes_list .pic { width:160px; height:120px; float:left; }
+#notes_list .text { width:426px; float:right; }
+#notes_list li { width:610px; height:158px; border-bottom:1px solid #b5b5b5; margin:20px 18px 0 18px;; }
+#notes_list h3 { height:30px; line-height:30px; font-size:20px; }
+#notes_list h3 a { color:#6ab610; }
+#notes_list span { font-size:12px; color:#9b9b9b; height:20px; line-height:20px; }
+#notes_list span a { color:#81be3a; }
+#notes_list p { font-size:12px; color:#605e5e; line-height:20px; }
+#notes_list .issue,#notes_list .more { display:block; margin:20px 24px 24px 18px; height:46px; line-height:46px; text-align:center; font-size:20px; color:#999; }
+#notes_list .issue { float:left; display:inline; width:164px; background:#f7f7f7; border:1px solid #dedede; }
+#notes_list .issue:hover { color:#666; }
+#notes_list .more { float:right; display:inline; font-weight:bold; }
+#notes_list .more:hover { color:#6ab610; text-decoration:underline;}
+
+
+
+/* 推荐地主和驴友,精彩游记 */
+#landlord,#friends{ width:302px; background:#fff; margin-bottom:10px; }
+#landlord,#friends {  height:284px; position:relative; }
+#landlord h4,#friends h4 { font-size:14px; color:#9291ac; height:50px; line-height:50px; margin-left:14px; }
+#landlord ul,#friends ul { padding-left:16px; }
+#landlord li,#friends li { float:left; width:60px; overflow:hidden; text-align:center; margin-right:8px; display:inline; }
+#landlord .img,#friends .img { display:block; width:60px; height:60px; }
+#landlord strong,#friends strong { display:block; font-size:12px; height:26px; line-height:26px; }
+#landlord strong a,#friends strong a { color:#757575; }
+#landlord strong a:hover,#friends strong a:hover { color:#e5b002; text-decoration:underline; }
+#landlord .issue_msg,#friends .issue_msg { display:block; width:114px; height:28px; line-height:28px; text-align:center; font-size:14px; color:#fff; background:#fcc718; border:1px solid #e8b702; position:absolute; bottom:16px; right:12px; }
+
+/* 精彩游记 */
+.wonderful_notes { width:302px; background:#fff; margin-bottom:10px;}
+.wonderful_notes h4 { font-size:14px; color:#9291ac; height:38px; line-height:38px; padding-top:8px; padding-left:14px; }
+.wonderful_notes ul { padding-bottom:16px; }
+.wonderful_notes li { font-size:12px; line-height:28px; width:266px; margin-left:18px;  background:url(../images/wonderfulnotes_bg.gif) no-repeat 0 12px; }
+.wonderful_notes a { display:block; height:28px; color:#81829f; margin-left:8px; }
+.wonderful_notes a:hover { color:#6ab610; text-decoration:underline; }
+
+/* end index */
