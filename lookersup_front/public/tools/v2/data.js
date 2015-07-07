@@ -2,7 +2,6 @@ define([ "jquery", "jquery-cookie", "common" ], function($) {
   var s = {
     uid : $.cookie('uid'),
     uname : $.cookie('uname'),
-    sat : $.cookie('sat')
   }
   window.UniqIndexedList = function(indexField) {
     this._items = new Array();

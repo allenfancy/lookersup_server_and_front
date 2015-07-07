@@ -1,12 +1,11 @@
-define([ "jquery","data" ],function($,dar) {
+define([ "jquery","jquerysession","data" ],function($,session,dar) {
 
 	var dar = dar;
 	var model = {};
-	
-	
-	$.when(dar.getEntityByName('user/getByName', username)).then(function(data){
-		model.user = data.result;
-		alert(model.user);
-		$.cookie("nickname",data.result.nickName, 30);
-	});
+	var uname = $.cookie('uname');
+	var user = $.session.get('user');
+	alert(uname);
+	if(uname){
+		
+	}
 });

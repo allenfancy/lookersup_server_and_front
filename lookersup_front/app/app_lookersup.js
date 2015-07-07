@@ -1,4 +1,4 @@
-
+var filter = require('../lib/filter');
 app.get('/register',function(req,res){
 	console.log('进来注册..');
 	res.render('user/register',{
@@ -15,8 +15,8 @@ app.get('/login',function(req,res){
 	});
 });
 
-app.get('/',function(req,res){
-	console.log(req.headers.cookie.nickname);
+app.get('/',filter.authorize,function(req,res){
+	
 	console.log('进来主界面了..');
 	res.render('home',{
 		layout : false,

@@ -16,6 +16,18 @@
 		</init-param>
 	</filter>
 
+
+	<filter>
+		<filter-name>crossFilter</filter-name>
+		<filter-class>com.allenfancy.lookersup.filter.CrossFilter</filter-class>
+	</filter>
+
+
+	<filter-mapping>
+		<filter-name>crossFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
 	<filter-mapping>
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>

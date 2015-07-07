@@ -2,7 +2,7 @@
 <testsuite failures="0" time="0.89" errors="0" skipped="0" tests="1" name="com.allenfancy.lookersup.dao.UserDaoTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="D:\Program Files (x86)\Java\jdk1.7.0_67\jre\bin"/>
+    <property name="sun.boot.library.path" value="D:\Program Files (x86)\Java\jre7\bin"/>
     <property name="java.vm.version" value="24.65-b04"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -15,10 +15,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\allen-works\sts\lookersup_server_web"/>
+    <property name="user.dir" value="D:\allen-works\allen_own\lookersup_server_front\lookersup_server_web"/>
     <property name="java.runtime.version" value="1.7.0_67-b01"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="D:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="D:\Program Files (x86)\Java\jre7\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
     <property name="java.io.tmpdir" value="C:\Users\HP\AppData\Local\Temp\"/>
     <property name="line.separator" value="
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\allen-works\sts\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8247754726161234849.tmp"/>
+    <property name="classworlds.conf" value="D:\allen-works\allen_own\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf597427577623267503.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="D:\Program Files (x86)\Java\jdk1.7.0_67\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/Program Files (x86)/Java/jre7/bin/client;D:/Program Files (x86)/Java/jre7/bin;D:/Program Files (x86)/Java/jre7/lib/i386;C:\Program Files (x86)\ImageMagick-6.9.1-Q16;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\TortoiseSVN\bin;D:\Program Files (x86)\Java\jdk1.7.0_67\bin;D:\Program Files (x86)\Java\jdk1.7.0_67\jre\bin;D:\Program Files\MySQL\MySQL Server 5.0\bin;D:\Program Files (x86)\nodejs\;D:\Program Files (x86)\nodejs\node_modules\node_modules;D:\mongodb\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\ruby-1.9.2\bin;C:\Program Files (x86)\git\bin;C:\Program Files (x86)\git\cmd;D:\Program Files (x86)\Heroku\bin;C:\Users\HP\AppData\Roaming\npm;D:\Program Files (x86)\OpenVPN\bin;E:\sts\sts-bundle\sts-3.6.4.RELEASE;;."/>
+    <property name="java.library.path" value="D:\Program Files (x86)\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/Program Files (x86)/Java/jre7/bin/client;D:/Program Files (x86)/Java/jre7/bin;D:/Program Files (x86)/Java/jre7/lib/i386;C:\Program Files (x86)\ImageMagick-6.9.1-Q16;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\TortoiseSVN\bin;D:\Program Files (x86)\Java\jdk1.7.0_67\bin;D:\Program Files (x86)\Java\jdk1.7.0_67\jre\bin;D:\Program Files\MySQL\MySQL Server 5.0\bin;D:\Program Files (x86)\nodejs\;D:\Program Files (x86)\nodejs\node_modules\node_modules;D:\mongodb\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\ruby-1.9.2\bin;C:\Program Files (x86)\git\bin;C:\Program Files (x86)\git\cmd;D:\Program Files (x86)\Heroku\bin;C:\Users\HP\AppData\Roaming\npm;D:\Program Files (x86)\OpenVPN\bin;E:\sts\sts-bundle\sts-3.6.4.RELEASE;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
@@ -43,17 +43,17 @@
     <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="32"/>
-    <property name="java.home" value="D:\Program Files (x86)\Java\jdk1.7.0_67\jre"/>
+    <property name="java.home" value="D:\Program Files (x86)\Java\jre7"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s D:\allen-works\works\res\settings.xml install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.version" value="1.7.0_67"/>
-    <property name="java.ext.dirs" value="D:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="D:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\resources.jar;D:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\rt.jar;D:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\sunrsasign.jar;D:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\jsse.jar;D:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\jce.jar;D:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\charsets.jar;D:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\jfr.jar;D:\Program Files (x86)\Java\jdk1.7.0_67\jre\classes"/>
+    <property name="java.ext.dirs" value="D:\Program Files (x86)\Java\jre7\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\Program Files (x86)\Java\jre7\lib\resources.jar;D:\Program Files (x86)\Java\jre7\lib\rt.jar;D:\Program Files (x86)\Java\jre7\lib\sunrsasign.jar;D:\Program Files (x86)\Java\jre7\lib\jsse.jar;D:\Program Files (x86)\Java\jre7\lib\jce.jar;D:\Program Files (x86)\Java\jre7\lib\charsets.jar;D:\Program Files (x86)\Java\jre7\lib\jfr.jar;D:\Program Files (x86)\Java\jre7\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\allen-works\sts\lookersup_server_web\EMBEDDED"/>
+    <property name="maven.home" value="D:\allen-works\allen_own\lookersup_server_front\lookersup_server_web\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>

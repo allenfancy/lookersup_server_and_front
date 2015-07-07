@@ -4,11 +4,13 @@ require.config({
     paths : {
     	"jquery" : "lib/jquery-2.1.1.min",
     	 "jquery-cookie" : "lib/jquery.cookie",
-    	 "data":"lib/data"
+    	 "data":"lib/data",
+    	 "jquerysession":"lib/jquerysession"
     },
-  /* shim : {
+ /* shim : {
     	"jquery":["jquery"],
-        "jquery-cookie" : [ "jquery" ]
+        "jquery-cookie" : [ "jquery" ],
+        "jQuerySession" : [ "jquery" ]
     }*/
         
 });
