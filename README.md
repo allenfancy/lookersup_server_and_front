@@ -1,2 +1,65 @@
 # lookersup_server_and_front
 前段nodejs expressjs  requirejs jquery(ajax)去调用后端 springmvc 写接口获取数据
+
+#使用maven过程中记录的问题
+    Maven的隐式对象：
+    ${basedir}：项目根目录
+    ${project.build.directory}构建目录，缺省为target
+    ${project.build.outputDirectory}构建过程输出目录，缺省为target/classes
+    ${project.build.finalName}产生五名称，缺省${project.aritifactId} - ${project.version}
+    ${project.packaging}打包类型，缺省为jar
+    ${project.xxx}当前pom文件的任意节点的内容
+    
+    maven根据profile中定义的环境变量打包的设置详解：
+    <profiles>
+      <profile>
+        <id>dev</id>
+        <activation>
+          <activeByDefault>true</activeByDefault>
+        </activation>
+        <build>
+          <finalName>${project.artifactId}</finalName>
+          <resources>
+            <resource>
+              <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+              <directory>src/main/properties</directory>
+            </resource>
+          </resources>
+        </build>
+      </profile>
+      <profile>
+        <id>test</id>
+        <activation>
+          <activeByDefault>false</activeByDefault>
+        </activation>
+        <build>
+          <finalName>${project.artifactId}-test</finalName>
+          <resources>
+            <resource>
+              <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+              <directory>src/test/properties</directory>
+            </resource>
+          </resources>
+        </build>
+      </profile>
+      <profile>
+        <id>pro</id>
+        <activation>
+          <activeByDefault>false</activeByDefault>
+        </activation>
+        <build>
+          <finalName>${project.artifactId}-test</finalName>
+          <resources>
+            <resource>
+              <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+              <directory>src/pro/properties</directory>
+            </resource>
+          </resources>
+        </build>
+      </profile>
