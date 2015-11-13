@@ -145,10 +145,10 @@
   
     <!-- 配置本地仓库 -->
     <localRepository>/Users/allen/Project/res/repository</localRepository>
-
-	<pluginGroups>
-        
-	</pluginGroups>
+    <!-- 插件组，用于配置插件 -->
+    <pluginGroups>
+    
+    </pluginGroups>
 
     <!-- 镜像--->
 	<mirrors>
@@ -207,9 +207,84 @@
 		</server>
 	</servers>
 
-    <!-- -->
+    <!--  -->
 	<activeProfiles>
 		<activeProfile>nexus</activeProfile>
 	</activeProfiles>
 </settings>
+简单属性：
+    .localRepository:本地仓库路径。
+    .interactiveModel:值为true/false,true表示Maven可以使用用户输入，默认true.
+    .usePluginRegistry:值为true/false,true表示Maven使用plugin-regisetry.xml管理插件版本，默认false；
+    .offline:值为true/false.true表示构建系统在离线模式下执行，默认为false
+pluginGroups:
+    每个pluginGroup元素都包含一个groupId,当在命令行中没有提供插件的groupId时，将会使用该列表。这个列表自动包含org.apache.maven.	    plugin和org.codehaus.mojo.
+    <pluginGroups>
+    	<pluginGroup>org.mortbay.jetty</pluginGroup>
+    </pluginGroups>
+servers:
+   POM的repositories和distributionManagement元素为下载和部署定义的仓库。一些设置如果服务器的用户和密码不应该和pom.xml一起分发。这种类型的信息应该存在于构建服务器上得settings.xml文件中。
+   <servers>
+   	<server>
+   		<id></id>
+   		<username></username>
+   		<password></password>
+   		<privateKey></privateKey>
+   		<passphrase></passphrase>
+   		<filePermissions></filePermissons>
+   		<directoryPermissions></directoryPermissions>
+   		<configuration></configuration>
+   	</server>
+   </servers>
+   id:服务器的Id，和repository/mirror中配置的id项匹配。
+   username,password:服务器的认证信息
+   privateKey,passphrase:指定一个路径到一个私有key(默认为${user.home/.ssh/id_dsa})和一个passphrase
+   filePermissions,directoryPermissions:设置文件和文件夹访问权限，对应unix文件权限制，如664，后者775
+   注意：如果你使用一个已经key登陆服务器，你必须忽略<password>项，否则，key将会被忽略。
+Mirrors：
+	<mirrors>
+		<mirror>
+			<id>dfsdfsd.com</id>
+			<name>username</name>
+			<url>http://xxxx.xxxx.xxx/dfsfds/</url>
+			<mirrorOf>central</mirrorOf>
+		</mirror>
+	</mirrors>
+  id,name:镜像的唯一标识和用户友好的名称
+  url:镜像的url，用于代替原始仓库的url
+  mirrorof:使用镜像的仓库的id，可以使用下面匹配属性：
+  	------*:匹配所有仓库id；
+  	------external:*:匹配所有仓库id，除了那些使用localhost或者基于仓库文件的仓库；
+  	------多个仓库id之间用逗号分隔
+  	-----!repol:表示匹配所有仓库，除了repol,
+proxies:代理服务器设置
+	<proxy>
+		<id></id>
+		<active></active>
+		<protocol></protocol>
+		<username></username>
+		<password></password>
+		<host></host>
+		<port></port>
+		<nonProxyHosts></nonProxyHosts>
+	</proxy>
+   id:可选，为代理服务器设置一个名称
+   active:true/false,默认true
+   protocol:代理服务器使用的协议类型
+   username：用户名
+   password:密码
+   host：主机名，或者IP
+   port：端口号
+   nonProxyHosts:不使用代理服务器的主机类型，多个主机之间用"|"分割，可以使用通配符
+profiles：
+	这里的profile元素师pom.xml的profile元素的一个剪裁版本，它包含activation,repositories,pluginRepositories和properties元素。如果一个在settings中的profile是激活的，它的值将覆盖在一个POM或者profiles.xml文件中得任何相同id的profiles.
+
+activeProfiles:
+	<activeProfiles>
+		<activeProfile>env-test</activeProfile>
+	</activeProfiles?
+        activeProfile中间定义activeProfile的id，在这里定义的activeProfile总是被激活，不关心环境设置，如果配置的id的profile没有发现，将没有任何事发生。
+
+pluginRepositories:
+	插件仓库，仓库是俩种主要构件的家，第一种构件用于其他构件的依赖。这是中央仓库存储大部分构件类型。另一种构件类型是插件。maven插件是一种特殊类型的构件。由于这个原因，插件仓库独立于其他仓库。
 
